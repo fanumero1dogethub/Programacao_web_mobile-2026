@@ -3,7 +3,7 @@ import 'dart:io';
 void main() {
   stdout.write('Qual o valor da nota da prova?');
   String? valor1 = stdin.readLineSync();
-  double? prova = double.tryParse(valor1) ?? 0.0;
+  double? prova = double.tryParse(valor1!) ?? 0.0;
 
   stdout.write('Qual a nota do trabalho?');
   double? trabalho = double.tryParse(stdin.readLineSync()!) ?? 0.0;
